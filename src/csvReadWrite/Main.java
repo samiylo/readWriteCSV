@@ -12,13 +12,20 @@ public class Main {
 		
 		// System.out.println("Hello World");
 		
+		
+		
 		FileController fileController = new FileController();
 		File newFile = fileController.createFile("myNewFile");
 		
-
+		
 		fileController.writeToFile(newFile, "Hello There :)");
-	
-		System.out.println(fileController.readFile(newFile));
+		
+		System.out.println("Here in readFile ::: " + fileController.readFile(newFile));
+		System.out.println("Here is the file path ::: " + newFile.getPath());
+		System.out.println("Here in isAbsolute() ::: " + newFile.isAbsolute());
+		System.out.println("Here in getAbsolutePath() ::: " + newFile.getAbsolutePath());
+		//System.out.println("Here in getCanonicalPath ::: " + newFile.getCanonicalPath());
+		
 		
 		
 		
