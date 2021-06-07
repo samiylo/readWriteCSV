@@ -27,6 +27,9 @@ public class Main {
 		//System.out.println("Here in getCanonicalPath ::: " + newFile.getCanonicalPath());
 		
 		
+		// Delete on exit
+		System.out.println("Here in delteOnExit() ::: " + newFile.deleteOnExit(););
+		
 		
 		
 		// System.out.println(newFile);
